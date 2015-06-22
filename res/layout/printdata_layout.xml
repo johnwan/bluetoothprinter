@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BluetoothActivity" >
+    <!--
+    <ImageView
+        android:id="@+id/imageView" 
+        android:layout_width="match_parent"    
+        android:layout_height="500dp"    
+        android:layout_alignParentLeft="true"    
+        android:layout_alignParentTop="true"    
+        android:layout_marginTop="46dp" >
+    </ImageView>   
+    -->
+    <TextView    
+        android:id="@+id/device_name"    
+        android:layout_width="wrap_content"    
+        android:layout_height="wrap_content"    
+        android:layout_alignParentLeft="true"    
+        android:layout_alignParentTop="true"    
+        android:layout_marginTop="16dp"    
+        android:text="Large Text"    
+        android:textAppearance="?android:attr/textAppearanceLarge" />    
+    
+    <TextView    
+        android:id="@+id/connect_state"    
+        android:layout_width="wrap_content"    
+        android:layout_height="wrap_content"    
+        android:layout_alignBaseline="@+id/device_name"    
+        android:layout_alignBottom="@+id/device_name"    
+        android:layout_marginLeft="42dp"    
+        android:layout_toRightOf="@+id/device_name"    
+        android:text="Large Text"    
+        android:textAppearance="?android:attr/textAppearanceLarge" />  
+    
+    
+	<EditText    
+        android:id="@+id/print_data"    
+        android:layout_width="match_parent"    
+        android:layout_height="200dp"    
+        android:layout_below="@id/device_name"  
+        android:layout_marginTop="46dp" >    
+    </EditText>    
+    
+    <Button    
+        android:id="@+id/send"    
+        android:layout_width="match_parent"    
+        android:layout_height="wrap_content"    
+        android:layout_alignParentLeft="true"    
+        android:layout_below="@id/print_data"    
+        android:layout_marginTop="21dp"    
+        android:background="@drawable/button_blue"
+        android:text="Send" />    
+    <Button    
+        android:id="@+id/printsample"    
+        android:layout_width="match_parent"    
+        android:layout_height="wrap_content"    
+        android:layout_alignParentLeft="true"    
+        android:layout_below="@id/send"    
+        android:layout_marginTop="21dp"    
+        android:background="@drawable/button_blue"
+        android:text="Print Sample" />    
+    <!--
+    <Button    
+        android:id="@+id/command"    
+        android:layout_width="match_parent"    
+        android:layout_height="wrap_content"    
+        android:layout_alignParentLeft="true"    
+        android:layout_below="@+id/send"    
+        android:text="Command" />
+    -->
+    <Button    
+        android:id="@+id/sendemail"    
+        android:layout_width="match_parent"    
+        android:layout_height="wrap_content"    
+        android:layout_alignParentLeft="true"    
+        android:layout_below="@id/printsample"  
+        android:background="@drawable/button_blue"  
+        android:text="Send Email" />
+    <Button    
+        android:id="@+id/delete"    
+        android:layout_width="match_parent"    
+        android:layout_height="wrap_content"    
+        android:layout_alignParentLeft="true"    
+        android:layout_below="@id/sendemail"    
+        android:background="@drawable/button_blue"
+        android:text="Send Sample" />
+    <!--  
+    <EditText
+        android:id="@+id/emailaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sendemail"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textEmailAddress" >
+
+        <requestFocus />
+    </EditText>
+	-->
+</RelativeLayout>
