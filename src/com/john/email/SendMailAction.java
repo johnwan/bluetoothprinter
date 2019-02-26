@@ -46,6 +46,5 @@ public class SendMailAction {
 		}
 		AsyncTask<String, Void, String> sendMailTask = new SendMailTLSTask(); 
     	sendMailTask.execute(fromEmail,password,toEmail,title,html);
-		//sendMailTask.execute("jiaolong423@gmail.com","Jiaolong880423","rinkal@internationalpointofsale.com","Thank you for your business",html);
 	}
 }
